@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack-dev-server --open --mode=development",
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,13 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "rxjs": "^6.3.3",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.1.10"
   }
 }
